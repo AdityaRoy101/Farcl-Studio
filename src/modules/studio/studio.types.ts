@@ -79,13 +79,15 @@ mutation ContinueCoversationV2(
   $isInitialConversation: Boolean!,
   $phase: String!,
   $version: String!
+  $conversationStyle: String!
 ) {
   continueCoversationV2(
     conversationId: $conversationId,
     message: $message,
     isInitialConversation: $isInitialConversation,
     phase: $phase,
-    version: $version
+    version: $version,
+    conversationStyle: $conversationStyle
   )
 }
 `;

@@ -218,6 +218,7 @@ export function useStudioConversation(
                 isInitialConversation: isInitial,
                 phase,
                 version: "V2",
+                conversationStyle: "Software Developer"
             }, signal);
             return data?.continueCoversationV2;
         },
